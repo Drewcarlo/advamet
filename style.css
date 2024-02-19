@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(home_page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 480px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    color: royalblue;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.9);
+}
+
+.card img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card p {
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+}
+
+.card-container {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('bg2.jpg') center/cover;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-us {
+    background-color: #f9f9f9;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('bg2.jpg') center/cover;
+    padding: 70px 30px;
+    text-align: left;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: royalblue;
+}
+
+.contact-us p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contact-us form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.contact-us form input[type="text"], .contact-us form input[type="email"], .contact-us form textarea {
+    width: 50%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 5px solid #ccc;
+    border-radius: 25px;
+}
+
+.contact-us form textarea {
+    height: 150px;
+}
+
+.contact-us form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 15%;
+}
+
+.contact-us form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
